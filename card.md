@@ -6,14 +6,13 @@
 
 На тестирование затрачено: <2 часа>  
 
-#### В результате тестирования было выявлено следущее соответствие: ####  
+#### В результате тестирования было выявлено следущее: ####  
 
-Карты с номер состоящим из 16 цифр - валидные  
-Карты с номер состоящим из 19 цифр - невалидные  
+Программа считает валидные номера карт American Express (AMEX) невалидными 
 
 ### Описание процесса тестирования ###  
 
-В качестве тестовых данных использовались данные www.freeformatter.com : https://www.freeformatter.com/credit-card-number-generator-validator.html  
+В качестве тестовых данных использовались данные www.freeformatter.com :https://www.freeformatter.com/credit-card-number-generator-validator.html    
 
 #### VISA: ####    
 
@@ -26,6 +25,58 @@
 4716135683123481697  
 ОР: Result is FAIL  
 ФР: Result is FAIL  
+
+#### MasterCard: ###  
+
+5525816089112647  
+ОР: Result is OK    
+ФР: Result is OK      
+5210259612627478  
+ОР: Result is OK  
+ФР: Result is OK    
+5431502031762647  
+ОР: Result is OK  
+ФР: Result is OK    
+
+#### American Express (AMEX): ####  
+
+340210322597992  
+ОР: Result is OK    
+ФР: Result is FAIL     
+343621645199836  
+ОР: Result is OK    
+ФР: Result is FAIL  
+374629892469317  
+ОР: Result is OK    
+ФР: Result is FAIL  
+
+#### Diners Club - Carte Blanche: ####  
+30370706552560  
+ОР: Result is OK    
+ФР: Result is FAIL  
+30078960263028  
+ОР: Result is OK    
+ФР: Result is FAIL  
+30247836519919  
+ОР: Result is OK    
+ФР: Result is FAIL  
+
+#### MIR ####
+2201382000000013  
+ОР: Result is OK    
+ФР: Result is OK  
+2201382000000013  
+ОР: Result is OK      
+ФР: Result is OK  
+      
+
+**В результате тестирования выявлены следующие дефекты:**    
+
+1. <https://github.com/AnnaStarkov/DZJ1.2/issues/2#issue-796813097>  
+1. <https://github.com/AnnaStarkov/DZJ1.2/issues/3#issue-796816505>  
+1. <https://github.com/AnnaStarkov/DZJ1.2/issues/4#issue-796822596>
+1. <https://github.com/AnnaStarkov/DZJ1.2/issues/5#issue-796833113>
+
 
 ### Тестирование производилось в следующем окружении: ###    
 
