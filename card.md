@@ -8,12 +8,12 @@
 
 #### В результате тестирования было выявлено следущее: ####  
 
-Программа считает валидные номера карт American Express (AMEX) невалидными  
-Программа считает валидные номера карт Diners Club - Carte Blanche невалидными  
+[Программа считает валидные номера карт American Express (AMEX) невалидными][4]  
+[Программа считает валидные номера карт Diners Club - Carte Blanche невалидными][5]  
 
 ### Описание процесса тестирования ###  
 
-В качестве тестовых данных использовались данные www.freeformatter.com :https://www.freeformatter.com/credit-card-number-generator-validator.html    
+В качестве тестовых данных использовались данные [www.freeformatter.com][1] 
 
 #### VISA: ####    
 
@@ -73,14 +73,17 @@
 
 **В результате тестирования выявлены следующие дефекты:**    
 
-1. <https://github.com/AnnaStarkov/DZJ1.2/issues/2#issue-796813097>  
-1. <https://github.com/AnnaStarkov/DZJ1.2/issues/3#issue-796816505>  
-1. <https://github.com/AnnaStarkov/DZJ1.2/issues/4#issue-796822596>
-1. <https://github.com/AnnaStarkov/DZJ1.2/issues/5#issue-796833113>
-
+1. [Не валидныe номерf карт American Express (AMEX)][2]
+1. [Не валидные номера карты Diners Club - Carte Blanche][3]  
 
 ### Тестирование производилось в следующем окружении: ###    
 
 <Windows 10 Домашняя Версия 2004, Разрядность - 64>  
 <версия Java openjdk 11.0.10 2021-01-19>  
 <IntelliJ IDEA Community Edition 2020.3.2 x64>  
+
+[1]: https://www.freeformatter.com/credit-card-number-generator-validator.html    
+[2]: https://github.com/AnnaStarkov/DZJ1.1.2/issues/4#issue-796822596
+[3]: https://github.com/AnnaStarkov/DZJ1.1.2/issues/5#issue-796833113
+[4]: https://github.com/AnnaStarkov/DZJ1.1.2/issues/4#issue-796822596 
+[5]: https://github.com/AnnaStarkov/DZJ1.1.2/issues/5#issue-796833113  
